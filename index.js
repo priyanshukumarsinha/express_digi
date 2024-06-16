@@ -1,7 +1,8 @@
+import 'dotenv/config'
 import express from 'express';
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 // app.use() mounts the specified middleware function (in this case, express.json()) at the specified path.
 // The middleware function will be executed when the base of the requested path matches the path.
